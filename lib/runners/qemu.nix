@@ -206,7 +206,6 @@ lib.warnIf (mem == 2048) ''
       "-device" "usb-kbd"
      ]
      else [
-      "-nographic"
      ]) ++
     lib.optionals canSandbox [
       "-sandbox" "on"
