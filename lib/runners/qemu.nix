@@ -199,11 +199,6 @@ lib.warnIf (mem == 2048) ''
     ] ++
     (if graphics.enable
      then [
-      "-display" "gtk,gl=on"
-      "-device" "virtio-vga-gl"
-      "-device" "qemu-xhci"
-      "-device" "usb-tablet"
-      "-device" "usb-kbd"
      ]
      else [
      ]) ++
